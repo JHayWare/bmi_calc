@@ -1,5 +1,7 @@
+import 'package:bmi_calc/components/icon_content.dart';
 import 'package:bmi_calc/components/reusable_card.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 const bottomContainerHeight = 80.0;
 const bottomContainerColor = Color(0xFFEB1555);
@@ -25,13 +27,19 @@ class _InputPageState extends State<InputPage> {
                 Expanded(
                   child: ReusableCard(
                     myColor: activeCardColor,
-                    cardChild: Text('Male'),
+                    cardChild: IconContent(
+                      icon: FontAwesomeIcons.mars,
+                      label: 'Male',
+                    ),
                   ),
                 ),
                 Expanded(
                   child: ReusableCard(
                     myColor: activeCardColor,
-                    cardChild: Text('Female'),
+                    cardChild: IconContent(
+                      icon: FontAwesomeIcons.venus,
+                      label: 'Female',
+                    ),
                   ),
                 ),
               ],
