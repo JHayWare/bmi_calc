@@ -1,3 +1,4 @@
+import 'package:bmi_calc/components/reusable_card.dart';
 import 'package:flutter/material.dart';
 
 const bottomContainerHeight = 80.0;
@@ -22,25 +23,40 @@ class _InputPageState extends State<InputPage> {
             child: Row(
               children: <Widget>[
                 Expanded(
-                  child: Text('Male'),
+                  child: ReusableCard(
+                    myColor: activeCardColor,
+                    cardChild: Text('Male'),
+                  ),
                 ),
                 Expanded(
-                  child: Text('Female'),
+                  child: ReusableCard(
+                    myColor: activeCardColor,
+                    cardChild: Text('Female'),
+                  ),
                 ),
               ],
             ),
           ),
           Expanded(
-            child: Text('Height'),
+            child: ReusableCard(
+              myColor: activeCardColor,
+              cardChild: Text('Age'),
+            ),
           ),
           Expanded(
             child: Row(
               children: <Widget>[
                 Expanded(
-                  child: Text('Weight'),
+                  child: ReusableCard(
+                    myColor: activeCardColor,
+                    cardChild: Text('Weight'),
+                  ),
                 ),
                 Expanded(
-                  child: Text('Age'),
+                  child: ReusableCard(
+                    myColor: activeCardColor,
+                    cardChild: Text('Age'),
+                  ),
                 ),
               ],
             ),
