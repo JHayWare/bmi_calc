@@ -8,11 +8,13 @@ const bottomContainerColor = Color(0xFFEB1555);
 const activeCardColor = Color(0xFF1E1D33);
 
 class InputPage extends StatefulWidget {
+  const InputPage({super.key});
+
   @override
-  _InputPageState createState() => _InputPageState();
+  InputPageState createState() => InputPageState();
 }
 
-class _InputPageState extends State<InputPage> {
+class InputPageState extends State<InputPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
